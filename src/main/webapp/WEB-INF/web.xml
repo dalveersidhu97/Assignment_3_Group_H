@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee"
+	id="WebApp_ID" version="2.5">
+	<servlet>
+		<servlet-name>RegisterStudent</servlet-name>
+		<jsp-file>/registerstudent.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterStudent</servlet-name>
+		<url-pattern>/lambtoncollege/registerstudent</url-pattern>
+	</servlet-mapping>
+
+	<!-- Clean URLs -->
+	<servlet>
+		<servlet-name>UpdateStudent</servlet-name>
+		<jsp-file>/updatestudent.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateStudent</servlet-name>
+		<url-pattern>/lambtoncollege/updatestudent</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>StudentDetails</servlet-name>
+		<jsp-file>/studentdetails.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentDetails</servlet-name>
+		<url-pattern>/lambtoncollege/studentdetails</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AddCourse</servlet-name>
+		<jsp-file>/addcourse.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCourse</servlet-name>
+		<url-pattern>/lambtoncollege/addcourse</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UpdateCourse</servlet-name>
+		<jsp-file>/updatecourse.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCourse</servlet-name>
+		<url-pattern>/lambtoncollege/updatecourse</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>StudentDelete</servlet-name>
+		<servlet-class>com.assignment3_groupH.servlets.StudentServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentDelete</servlet-name>
+		<url-pattern>/lambtoncollege/deletestudent</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>CourseDelete</servlet-name>
+		<servlet-class>com.assignment3_groupH.servlets.CourseServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CourseDelete</servlet-name>
+		<url-pattern>/lambtoncollege/deletecourse</url-pattern>
+	</servlet-mapping>
+
+</web-app>
